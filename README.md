@@ -3,5 +3,4 @@
 ## 나의 첫 저장소
 
 오늘 생성한 결과물들 저장 및 게시
-[---
-](https://ymyj222222-lgtm.github.io/cheonan1106/)
+(https://ymyj222222-lgtm.github.io/cheonan1106/)
