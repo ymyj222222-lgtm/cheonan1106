@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#f7faf7" />
+<meta name="description" content="자연과 산업, 삶이 함께 크는 곳. 천안시 풍세면 6장 인터랙티브 웹 프레젠테이션." />
+<title>풍요로운 세상, 풍세면 | 웹 프레젠테이션</title>
+<link rel="stylesheet" href="styles.css" />
+<script defer src="script.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#s1">본문으로 건너뛰기</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="site-header">
+  <a class="brand" href="#s1" aria-label="풍세면 프레젠테이션 첫 화면"><span class="brand-symbol">豊</span><span>CHEONAN <strong>풍세면</strong></span></a>
+  <nav class="top-nav" aria-label="슬라이드 메뉴">
+    <a href="#s1" data-nav="0">소개</a><a href="#s2" data-nav="1">현황</a><a href="#s3" data-nav="2">지역 강점</a><a href="#s4" data-nav="3">주요 사업</a><a href="#s5" data-nav="4">발전 방향</a><a href="#s6" data-nav="5">마무리</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-button" id="referenceBtn" type="button" aria-label="원본 슬라이드 비교" title="원본 슬라이드 비교"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg></button>
+    <button class="icon-button" id="fullscreenBtn" type="button" aria-label="전체 화면" title="전체 화면"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button>
+  </div>
+</header>
+<main id="deck" aria-label="풍세면 프레젠테이션">
+  <section class="slide slide-cover" id="s1" aria-labelledby="title1" data-slide="0">
+    <div class="slide-content cover-layout">
+      <div class="cover-copy reveal">
+        <p class="eyebrow">CHEONAN · PUNGSE <span class="eyebrow-line"></span> 2026</p>
+        <h1 id="title1">자연과 산업,<br><em>삶이 함께 크는 곳</em></h1>
+        <p class="cover-tagline">풍요로운 세상, 풍세면</p>
+        <div class="cover-label"><span class="tiny-dot"></span> 지역 현황 <span class="sep">/</span> 주요 사업 <span class="sep">/</span> 발전 방향</div>
+        <div class="cover-bottom"><img src="assets/character1.png" alt="천안시 홍보캐릭터" /><span>천안시 동남구 풍세면</span></div>
+      </div>
+      <div class="cover-visual reveal delay-1"><div class="hero-orbit"></div><img class="hero-img" src="assets/hero.png" alt="태학산, 풍서천, 아파트와 산업시설, 여섯 홍보캐릭터가 어우러진 풍세면 이미지" /><span class="visual-caption">NATURE · PEOPLE · FUTURE</span></div>
+    </div>
+    <div class="slide-mark">01 <span>/ 06</span></div>
+  </section>
+
+  <section class="slide slide-stat" id="s2" aria-labelledby="title2" data-slide="1">
+    <div class="slide-content">
+      <div class="section-heading reveal"><p class="eyebrow">PUNGSE / TODAY</p><h2 id="title2">인구 1만 명 시대,<br class="mobile-only"> <em>빠르게 달라진 풍세면</em></h2><p class="subhead">행정안전부 주민등록 인구통계 기반 · 2026년 9월 기준</p></div>
+      <div class="metrics">
+        <article class="metric reveal"><span class="metric-accent green"></span><span class="metric-value" data-count="10617" data-suffix="명">10,617명</span><span class="metric-label">주민등록 인구</span><span class="metric-icon">◉</span></article>
+        <article class="metric reveal delay-1"><span class="metric-accent blue"></span><span class="metric-value" data-count="5504" data-suffix="세대">5,504세대</span><span class="metric-label">주민등록 세대</span><span class="metric-icon">⌂</span></article>
+        <article class="metric reveal delay-2"><span class="metric-accent yellow"></span><span class="metric-value" data-count="45.6" data-suffix="%">45.6%</span><span class="metric-label">1인 세대 비율</span><span class="metric-icon">◎</span></article>
+      </div>
+      <div class="chart-panel reveal delay-2"><div class="chart-header"><div><span class="chart-kicker">POPULATION TREND</span><h3>연말 및 최근 월말 인구 추이</h3></div><span class="chart-unit">단위: 명</span></div>
+        <div class="chart-wrap" role="img" aria-label="인구 추이: 2024년 12월 9,527명, 2025년 12월 10,580명, 2026년 9월 10,617명">
+          <svg class="population-chart" viewBox="0 0 1000 245" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#3f9b6e" stop-opacity=".18"/><stop offset="1" stop-color="#3f9b6e" stop-opacity="0"/></linearGradient></defs>
+            <path d="M100 155 L500 60 L900 57 L900 202 L100 202Z" fill="url(#areaGrad)" class="chart-area"/>
+            <path d="M100 155 L500 60 L900 57" fill="none" stroke="#328b59" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="chart-line"/>
+            <g class="chart-points"><circle cx="100" cy="155" r="10"/><circle cx="500" cy="60" r="10"/><circle cx="900" cy="57" r="10"/></g>
+            <g text-anchor="middle" font-weight="800" fill="#14365a" font-size="27"><text x="100" y="123">9,527</text><text x="500" y="30">10,580</text><text x="900" y="27">10,617</text></g>
+            <g text-anchor="middle" fill="#7b8b91" font-size="19"><text x="100" y="225">2024.12</text><text x="500" y="225">2025.12</text><text x="900" y="225">2026.09</text></g>
+          </svg>
+        </div><img class="corner-character" src="assets/character2.png" alt="초록색 홍보캐릭터" /></div>
+    </div><div class="slide-mark">02 <span>/ 06</span></div>
+  </section>
+
+  <section class="slide slide-identity" id="s3" aria-labelledby="title3" data-slide="2">
+    <div class="slide-content"><div class="section-heading reveal"><p class="eyebrow">PUNGSE / IDENTITY</p><h2 id="title3">풍세를 설명하는 <em>세 가지 풍경</em></h2><p class="subhead">자연환경 · 대규모 정주 공간 · 산업 기반이 공존하는 지역</p></div>
+      <div class="identity-grid">
+        <article class="identity-card nature reveal"><span class="card-num">01 / NATURE</span><span class="identity-illustration">🌳</span><div><h3>태학산과 풍서천</h3><p>숲 · 물길 · 휴양자원</p></div><span class="mini-line"></span></article>
+        <article class="identity-card residence reveal delay-1"><span class="card-num">02 / LIVING</span><span class="identity-illustration">🏙️</span><div><h3>3,200세대 아파트</h3><p>한양수자인 에코시티</p></div><span class="mini-line"></span></article>
+        <article class="identity-card industry reveal delay-2"><span class="card-num">03 / INDUSTRY</span><span class="identity-illustration">🏭</span><div><h3>풍세 산업기반</h3><p>기존 산업단지와 신규 개발</p></div><span class="mini-line"></span></article>
+      </div>
+      <div class="section-bottom reveal"><strong>자연 <span>+</span> 주거 <span>+</span> 산업</strong><img src="assets/character3.png" alt="호두과장 캐릭터" /></div>
+    </div><div class="slide-mark">03 <span>/ 06</span></div>
+  </section>
+
+  <section class="slide slide-projects" id="s4" aria-labelledby="title4" data-slide="3">
+    <div class="slide-content"><div class="section-heading reveal"><p class="eyebrow">PROJECT / 2026</p><h2 id="title4">주요 사업, <em>생활의 변화를 만들다</em></h2><p class="subhead">2026년 보도·사업 공고로 확인되는 풍세면 관련 사업</p></div>
+      <div class="project-list">
+        <article class="project-row reveal"><div class="project-index mint">01</div><div class="project-name"><h3>풍서천 호두길 정비</h3><span>RIVERSIDE</span></div><div class="project-info"><strong>2026.4 착공 · 전체 대상 16.8km</strong><p>자전거 순환망 연결</p></div><span class="project-arrow">↗</span></article>
+        <article class="project-row reveal delay-1"><div class="project-index ice">02</div><div class="project-name"><h3>남관지구 배수개선</h3><span>SAFETY</span></div><div class="project-info"><strong>15억 원 · 배수로 1.2km 개선 계획</strong><p>침수 위험 저감</p></div><span class="project-arrow">↗</span></article>
+        <article class="project-row reveal delay-2"><div class="project-index peach">03</div><div class="project-name"><h3>태학산 휴양림 확장</h3><span>FOREST</span></div><div class="project-info"><strong>2026.8 숲속의집 통신공사 입찰</strong><p>산림 휴양기반 확충</p></div><span class="project-arrow">↗</span></article>
+      </div><div class="footnote reveal">※ 추진 시점과 단계는 확인된 2026년 자료 기준</div><img class="project-character" src="assets/character4.png" alt="보라색 홍보캐릭터" />
+    </div><div class="slide-mark">04 <span>/ 06</span></div>
+  </section>
+
+  <section class="slide slide-future" id="s5" aria-labelledby="title5" data-slide="4">
+    <div class="slide-content"><div class="section-heading reveal"><p class="eyebrow">FUTURE / DIRECTION</p><h2 id="title5">앞으로의 풍세, <em>세 방향의 균형 성장</em></h2><p class="subhead">아래 내용은 확정 사업이 아닌 지역 현황을 토대로 한 <strong>발전 방향 제안</strong></p></div>
+      <div class="future-grid">
+        <article class="future-card future-blue reveal"><div class="future-symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-8h6v8"/></svg></div><span class="future-number">DIRECTION 01</span><h3>살기 좋은 풍세</h3><p>주거 · 교통 · 생활편의 연결</p><div class="future-key">정주 품질 <span>↗</span></div></article>
+        <article class="future-card future-green reveal delay-1"><div class="future-symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 3h6l1 3 3 1.5 3-.7 2 5-2.5 2 0 3-1 3-5 1-2-3h-4l-2 3-5-1-1-5 2.5-2v-3L2 9l2-4 3 .5L9 3Z" transform="translate(1 0) scale(.91)"/><circle cx="12" cy="12" r="3"/></svg></div><span class="future-number">DIRECTION 02</span><h3>일하기 좋은 풍세</h3><p>산업 입지와 지역상생 강화</p><div class="future-key">지역경제 <span>↗</span></div></article>
+        <article class="future-card future-orange reveal delay-2"><div class="future-symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22V11m0 1C6 11 5 7 8 4c4 1 5 4 4 8Zm0 0c6-1 7-5 4-8-4 1-5 4-4 8Z"/><path d="M5 22h14M4 17c3 0 4 2 8 2s5-2 8-2"/></svg></div><span class="future-number">DIRECTION 03</span><h3>머물고 싶은 풍세</h3><p>태학산 · 풍서천 자연자원 연계</p><div class="future-key">관광 · 휴양 <span>↗</span></div></article>
+      </div><img class="future-character" src="assets/character5.png" alt="갈색 홍보캐릭터" />
+    </div><div class="slide-mark">05 <span>/ 06</span></div>
+  </section>
+
+  <section class="slide slide-closing" id="s6" aria-labelledby="title6" data-slide="5">
+    <div class="slide-content closing-grid"><div class="closing-copy reveal"><p class="eyebrow">PUNGSE · CHEONAN</p><h2 id="title6">풍요로운 세상<br><em>함께 만드는 풍세면</em></h2><p class="closing-message">자연과 사람, 미래가 만나는 곳</p><div class="closing-chip">PUNGSE · CHEONAN <span>♥</span></div><img class="closing-character" src="assets/character6.png" alt="노란색 홍보캐릭터" /></div>
+      <div class="closing-visual reveal delay-1"><div class="closing-rim"></div><img src="assets/heart.gif" alt="풍세면 홍보캐릭터가 손하트 동작과 큰 하트 효과를 보여 주는 10초 반복 애니메이션" /><span class="closing-caption"><span class="live-dot"></span> 손하트 애니메이션 · 10초 반복</span></div></div>
+    <div class="slide-mark">06 <span>/ 06</span></div>
+  </section>
+</main>
+<div class="bottom-toolbar" aria-label="슬라이드 제어">
+  <button id="prevBtn" class="step-btn" type="button" aria-label="이전 슬라이드">← <span>이전</span></button>
+  <div class="slide-counter"><span id="currentIndex">01</span><span class="counter-slash"> / </span><span>06</span></div>
+  <button id="nextBtn" class="step-btn next" type="button" aria-label="다음 슬라이드"><span>다음</span> →</button>
+</div>
+<div class="side-rail" aria-label="슬라이드 빠른 이동"><button data-dot="0" aria-label="1번 슬라이드"></button><button data-dot="1" aria-label="2번 슬라이드"></button><button data-dot="2" aria-label="3번 슬라이드"></button><button data-dot="3" aria-label="4번 슬라이드"></button><button data-dot="4" aria-label="5번 슬라이드"></button><button data-dot="5" aria-label="6번 슬라이드"></button></div>
+<button class="sources-button" id="sourcesBtn" type="button">ⓘ 출처 및 안내</button>
+<dialog id="sourcesDialog" class="modal"><div class="modal-head"><div><p class="eyebrow">REFERENCE</p><h2>자료 출처 및 작성 기준</h2></div><button type="button" class="modal-close" data-close="sourcesDialog" aria-label="닫기">×</button></div><div class="modal-body"><p>이 웹 프레젠테이션은 첨부된 6장 PowerPoint의 내용을 옮긴 것으로, 별도의 수치나 정책을 새로 추가하지 않았습니다.</p><p><strong>인구 현황</strong> · 원본 슬라이드 표기 기준: 2026년 9월. 원본 출처에 기재된 지역통계 페이지를 참고했습니다. 통계 수치는 재검증 없이 원본을 유지했으므로 공식 발표 전 주민등록 통계 원자료와 대조해 주세요.</p><p><strong>주요 사업</strong> · 원본 슬라이드의 2026년 보도 및 사업 공고를 기반으로 작성했습니다. 추진 단계는 이후 변경될 수 있습니다.</p><p><strong>발전 방향</strong> · 5번 슬라이드는 확정된 행정계획이 아니라 제안사항입니다.</p><div class="sources-links"><a href="https://k-calc.com/region/Chungcheongnam-do/Cheonan-si/Dongnam-gu/Pungse-myeon" target="_blank" rel="noopener noreferrer">인구 통계 참고 자료 ↗</a><a href="https://www.ccnnews.co.kr/news/articleView.html?idxno=408502" target="_blank" rel="noopener noreferrer">풍서천 관련 보도 ↗</a><a href="https://v.daum.net/v/20260130140149799" target="_blank" rel="noopener noreferrer">남관지구 관련 보도 ↗</a><a href="https://www.bidpro.co.kr/n0_ipchal/konggo/sisul/konggo_view.asp?num=3820544" target="_blank" rel="noopener noreferrer">태학산 관련 공고 ↗</a></div><p class="muted">이미지: 사용자 제공 천안시 캐릭터 및 풍세면 홍보 일러스트 · 프레젠테이션 기반 재구성</p></div></dialog>
+<dialog id="referenceDialog" class="modal reference-modal"><div class="modal-head"><div><p class="eyebrow">ORIGINAL SLIDE</p><h2>원본 슬라이드 비교 <span id="referenceIndex">01 / 06</span></h2></div><button type="button" class="modal-close" data-close="referenceDialog" aria-label="닫기">×</button></div><img id="referenceImage" src="assets/slide-1.png" alt="원본 PPT 슬라이드 1번" /><div class="reference-controls"><button id="referencePrev" type="button">← 이전</button><span>기존 PowerPoint 화면을 참고용으로 표시합니다.</span><button id="referenceNext" type="button">다음 →</button></div></dialog>
+</body></html>
